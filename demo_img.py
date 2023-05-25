@@ -3,10 +3,9 @@ from lib.detector import VehicleDetector
 import cv2
 
 if __name__ == '__main__':
-
     det = VehicleDetector()
 
-    im = cv2.imread('./car.jpg')
+    im = cv2.imread('E:\PyCharm\python_basic\yolov3-vehicle-detection-paddle\car.jpg')
     result = det.detect(im)
 
     cv2.imshow('a', result)

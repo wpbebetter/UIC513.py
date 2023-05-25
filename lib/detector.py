@@ -1,3 +1,4 @@
+import paddle
 
 import ppdet.utils.checkpoint as checkpoint
 from ppdet.utils.cli import ArgsParser
@@ -14,6 +15,8 @@ from lib.classifier import CarClassifier
 import numpy as np
 from PIL import Image
 from PIL import ImageFont, ImageDraw
+
+paddle.enable_static()
 
 font_path = r'./simsun.ttc'
 font = ImageFont.truetype(font_path, 16)
